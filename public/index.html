@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dash Cash Noddin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+  <main class="shell">
+    <section id="authScreen" class="auth-card">
+      <div class="logo">💸</div>
+      <h1>Dash Cash Noddin</h1>
+      <p class="muted">Your classroom marketplace</p>
+      <div class="auth-grid">
+        <form id="loginForm" class="panel">
+          <h2>Log in</h2>
+          <label>Username<input id="loginUsername" autocomplete="username" required /></label>
+          <label>PIN<input id="loginPin" inputmode="numeric" type="password" minlength="6" maxlength="8" autocomplete="current-password" required /></label>
+          <button>Log in</button>
+        </form>
+        <form id="registerForm" class="panel">
+          <h2>New student</h2>
+          <label>Choose username<input id="regUsername" maxlength="20" required /></label>
+          <label>Choose 6–8 digit PIN<input id="regPin" inputmode="numeric" type="password" minlength="6" maxlength="8" required /></label>
+          <label>Class join code<input id="regJoinCode" type="password" autocomplete="off" maxlength="64" required /></label>
+          <button class="secondary">Create account</button>
+          <small>Use the class join code from your teacher/admin. Do not use your real school password.</small>
+        </form>
+      </div>
+    </section>
+
+    <section id="appScreen" class="hidden">
+      <header class="topbar">
+        <div>
+          <h1>💸 Dash Cash Noddin</h1>
+          <div id="welcome" class="muted"></div>
+        </div>
+        <div class="balance-card">
+          <span>Available</span><strong id="balance">0</strong><small>Dash Cash</small>
+        </div>
+        <button id="logoutBtn" class="ghost">Log out</button>
+      </header>
+
+      <nav id="nav" class="tabs"></nav>
+      <div id="view"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

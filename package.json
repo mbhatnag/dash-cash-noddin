@@ -1,0 +1,12 @@
+{
+  "name": "dash-cash-noddin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A classroom Dash Cash marketplace with buyer/seller, teacher, and admin roles.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": { "node": ">=18" }
+}
